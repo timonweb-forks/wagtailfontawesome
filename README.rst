@@ -1,16 +1,12 @@
 ===================
 Wagtail FontAwesome
 ===================
-.. image:: https://travis-ci.org/alexgleason/wagtailfontawesome.svg?branch=master
-    :target: https://travis-ci.org/alexgleason/wagtailfontawesome
-.. image:: https://coveralls.io/repos/github/alexgleason/wagtailfontawesome/badge.svg?branch=master
-    :target: https://coveralls.io/github/alexgleason/wagtailfontawesome?branch=master
-.. image:: https://img.shields.io/github/license/mashape/apistatus.svg
-    :target: https://github.com/alexgleason/wagtailfontawesome/blob/master/LICENSE
+.. image:: https://img.shields.io/pypi/l/wagtailfontawesome.svg
+    :target: https://gitlab.com/alexgleason/wagtailfontawesome/blob/master/LICENSE
 
 Add `FontAwesome 4.7 <https://fontawesome.com/v4.7.0/>`_ icons to your Wagtail project.
 
-.. image:: https://raw.githubusercontent.com/alexgleason/wagtailfontawesome/master/screenshot.png
+.. image:: https://gitlab.com/alexgleason/wagtailfontawesome/raw/master/screenshot.png
     :alt: Screenshot
 
 Install
@@ -31,22 +27,10 @@ StreamField
 
 Add FontAwesome icons to StreamField `the regular way <http://docs.wagtail.io/en/latest/topics/streamfield.html#basic-block-types>`_, just set `icon="fa-something"`. Reference `the full list <http://fontawesome.io/icons/>`_.
 
-wagtailmodeladmin
+ModelAdmin
 -----------------
 
-`wagtailmodeladmin <https://github.com/rkhleics/wagtailmodeladmin>`_ is supported if you're using Wagtail 1.4 or above. Similar to StreamField, just set `icon="fa-something"` on your menu item.
-
-Hallo plugins
--------------
-
-You can use FontAwesome icons on custom Hallo buttons by setting the `icon` option to `icon icon-fa-something`.
-
-.. code-block:: javascript
-
-    button.hallobutton({
-      label: "Blockquote",
-      icon: 'icon icon-fa-quote-left',
-    });
+`ModelAdmin <http://docs.wagtail.io/en/latest/reference/contrib/modeladmin/>`_ is supported if you're using Wagtail 1.5 or above. Similar to StreamField, just set `icon="fa-something"` on your menu item.
 
 Other parts of the admin
 ------------------------

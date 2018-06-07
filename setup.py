@@ -12,8 +12,6 @@ from setuptools.command.bdist_egg import bdist_egg as base_bdist_egg
 
 from wagtailfontawesome import __version__
 
-GITHUB_REPOSITORY = 'https://github.com/alexgleason/wagtailfontawesome'
-
 
 with open('README.rst', 'r') as readme:
     long_description = readme.read()
@@ -45,7 +43,7 @@ setup(
     version=__version__,
     description='Add FontAwesome icons to StreamField.',
     long_description=long_description,
-    url=GITHUB_REPOSITORY,
+    url='https://gitlab.com/alexgleason/wagtailfontawesome',
     author='Alex Gleason',
     author_email='alex@alexgleason.me',
     license='MIT',
