@@ -29,4 +29,4 @@ gulp.task('copy-fonts', function() {
         .pipe(gulp.dest('wagtailfontawesome/static/wagtailfontawesome/fonts'));
 });
 
-gulp.task('default', ['compile-sass', 'copy-fonts']);
+gulp.task('default', gulp.series('compile-sass', 'copy-fonts'));
