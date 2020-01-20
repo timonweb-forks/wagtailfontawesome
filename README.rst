@@ -25,7 +25,42 @@ Usage
 StreamField
 -----------
 
-Add FontAwesome icons to StreamField `the regular way <http://docs.wagtail.io/en/latest/topics/streamfield.html#basic-block-types>`_, just set `icon="fa-something"`. Reference `the full list <http://fontawesome.io/icons/>`_.
+Add FontAwesome icons to StreamField `the regular way <http://docs.wagtail.io/en/latest/topics/streamfield.html#basic-block-types>`_, just set `icon="fa-something"`. Reference `the full list <https://fontawesome.com/v4.7.0/icons/>`_.
+
+For example, using ``fa-exclamation-triangle`` on a block that's a class:
+
+.. code-block:: python
+
+    class NoticeBlock(StructBlock):
+        message = RichTextBlock()
+        indicator = ChoiceBlock()
+
+        class Meta:
+            icon = 'fa-exclamation-triangle'
+
+The same block, but inline:
+
+.. code-block:: python
+
+    notice = StructBlock([
+      ('message', RichTextBlock()),
+      ('indicator', ChoiceBlock())
+    ], icon='fa-exclamation-triangle')
+
+Using IconBlock
+---------------
+
+Wagtail FontAwesome contains a dropdown chooser you can use to select a block from the available options. For example,
+
+.. code-block:: python
+
+    from wagtailfontawesome.blocks import IconBlock
+
+    class CardBlock(StructBlock):
+        icon = IconBlock()
+        title = CharBlock()
+
+You are responsible for including the FontAwesome CSS yourself somewhere on the page. See the section "On the front-end" below for a way to do that with Wagtail FontAwesome.
 
 ModelAdmin
 -----------------
