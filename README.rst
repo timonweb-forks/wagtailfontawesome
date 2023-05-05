@@ -1,6 +1,11 @@
-===================
-Wagtail FontAwesome
-===================
+================================
+DEPRECATED - Wagtail FontAwesome
+================================
+
+`Wagtail now has FontAwesome icons built-in. <https://github.com/wagtail/wagtail/pull/10303>`
+
+This project is here for historical purposes, but should no longer be used!
+
 .. image:: https://img.shields.io/pypi/l/wagtailfontawesome.svg
     :target: https://gitlab.com/alexgleason/wagtailfontawesome/blob/master/LICENSE
 
