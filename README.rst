@@ -2,7 +2,7 @@
 DEPRECATED - Wagtail FontAwesome
 ================================
 
-`Wagtail now has FontAwesome icons built-in. <https://github.com/wagtail/wagtail/pull/10303>`
+`Wagtail now has FontAwesome icons built-in. <https://github.com/wagtail/wagtail/pull/10303>`_
 
 This project is here for historical purposes, but should no longer be used!
 
