@@ -1,5 +1,4 @@
 from django.utils.html import format_html
-from pkg_resources import parse_version
 
 try:
     from django.templatetags.static import static
@@ -20,10 +19,6 @@ def import_wagtailfontawesome_stylesheet():
 
 
 # New Wagtail versions support importing CSS throughout the admin.
-# Fall back to the old hook (editor screen only) for older versions.
-if parse_version(WAGTAIL_VERSION) >= parse_version('1.4'):
-    admin_stylesheet_hook = 'insert_global_admin_css'
-else:
-    admin_stylesheet_hook = 'insert_editor_css'
+admin_stylesheet_hook = 'insert_global_admin_css'
 
 hooks.register(admin_stylesheet_hook, import_wagtailfontawesome_stylesheet)
